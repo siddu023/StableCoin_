@@ -1,5 +1,7 @@
 Decentralized Stablecoin (DSC) Project
-This project is a decentralized stablecoin system that allows users to mint and redeem stablecoins (DSC) using ERC20 tokens like WETH (Wrapped Ethereum) and WBTC (Wrapped Bitcoin) as collateral. The system is built on Ethereum-compatible blockchains and uses Chainlink oracles for price feeds.
+This project is a decentralized stablecoin system that allows users to mint and redeem stablecoins (DSC) using ERC20 tokens like WETH (Wrapped Ethereum) and WBTC (Wrapped Bitcoin) as collateral.
+
+The system is built on Ethereum-compatible blockchains and uses Chainlink oracles for price feeds.
 
 Table of Contents
 Overview
@@ -13,6 +15,8 @@ Usage
 Security
 Contributing
 License
+
+
 Overview
 The Decentralized Stablecoin (DSC) system allows users to deposit WETH or WBTC as collateral and mint DSC tokens that are pegged to $1 USD. This stablecoin project uses decentralized price oracles from Chainlink to ensure collateralization and liquidation of positions when the value of the collateral falls below the threshold.
 
@@ -22,12 +26,16 @@ Redeem Collateral: Users can redeem their collateral by burning DSC.
 Health Factor Monitoring: The system ensures a health factor is maintained to avoid liquidation.
 Price Feeds via Chainlink: Uses Chainlink decentralized oracles for reliable price feeds of WETH and WBTC.
 ERC20 Compatibility: Supports any ERC20 token as collateral, with WETH and WBTC being the primary tokens.
+
+
 Tech Stack
 Solidity: Core smart contracts are written in Solidity.
 Foundry: Used for compiling, testing, and deploying the contracts.
 Chainlink: Used for decentralized price feeds.
 Polygon/Ethereum: Deployed on Ethereum or Polygon (can be deployed on any EVM-compatible chain).
 OpenZeppelin: Utilized for ERC20 token contracts and security features.
+
+
 Smart Contracts
 DSC.sol: The core stablecoin contract responsible for minting and burning DSC tokens.
 DSCEngine.sol: Handles collateral deposits, withdrawals, and tracks the health factor.
@@ -38,6 +46,7 @@ Deployed on Polygon Mainnet (or other network as per your deployment):
 DSC.sol: 0xYourDeployedContractAddress
 DSCEngine.sol: 0xYourDeployedContractAddress
 Chainlink Price Feed: Uses existing Chainlink feeds for WETH/USD and WBTC/USD.
+
 Deployment
 This project is deployed using Foundry. To deploy the smart contracts, follow these steps:
 
@@ -86,17 +95,23 @@ Mint DSC:
 
 solidity
 Copy code
+
 function depositCollateralAndMintDsc(address collateral, uint256 amountCollateral, uint256 amountToMint);
+
 Redeem Collateral:
 
 solidity
 Copy code
+
 function redeemCollateralForDsc(address collateral, uint256 amountCollateral, uint256 amountDscToBurn);
+
 Security
 Chainlink Oracles: For accurate price feeds.
+
 Reentrancy Protection: All external-facing functions are protected using nonReentrant modifiers.
 Health Factor Checks: Ensures the system is solvent and prevents under-collateralization.
 Contributing
+
 We welcome contributions! Please fork the repository, create a new branch, and submit a pull request with detailed information on the changes you propose.
 
 Setting Up the Development Environment
