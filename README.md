@@ -5,15 +5,25 @@ The system is built on Ethereum-compatible blockchains and uses Chainlink oracle
 
 Table of Contents
 Overview
+
 Features
+
 Tech Stack
+
 Smart Contracts
+
 Deployment
+
 Testing
+
 How It Works
+
 Usage
+
 Security
+
 Contributing
+
 License
 
 
