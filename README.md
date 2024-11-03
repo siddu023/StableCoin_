@@ -122,24 +122,14 @@ Reentrancy Protection: All external-facing functions are protected using nonReen
 Health Factor Checks: Ensures the system is solvent and prevents under-collateralization.
 Contributing
 
-We welcome contributions! Please fork the repository, create a new branch, and submit a pull request with detailed information on the changes you propose.
 
-Setting Up the Development Environment
-Fork and clone the repository:
 
-bash
-Copy code
-git clone https://github.com/yourusername/DSC-project.git
-cd DSC-project
-Install dependencies:
 
-bash
-Copy code
-forge install
-Make your changes and submit a pull request.
 
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
+
+
+
+
 
 This README includes all essential sections like overview, features, smart contract details, deployment instructions, and usage examples, making it suitable for developers and users looking to understand and interact with your DeFi project.
 
